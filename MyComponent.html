@@ -9,7 +9,7 @@
 <body>
   <h1>sss</h1>
   <h2>sss</h2>
-  <p>ssssssss<em>倾斜</em>ssss<b>加粗</b>sssss <span style="color:yellow;background:royalblue">黄色</span> ppp</p>
+  <p>ssssssss<em>倾斜</em>ssss<b>加粗</b>sssss <span style="color:yellow;background:rgb(75, 14, 228)">黄色</span> ppp</p>
   <div>分割线
     <hr>
     换行 <br>
@@ -21,8 +21,9 @@
       <img src="https://img0.baidu.com/it/u=3688415164,2629030251&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="图片">
       <br>
       <!-- onkeyup事件会在键盘按键被松开时发生 -->
-      <input type="text" name="name" placeholder="请输入账号" onkeyup="value=value.replace(/[^\d]/g,'')"><br>   
+      账号：<input type="text" name="name" placeholder="请输入账号" onkeyup="value=value.replace(/[^\d]/g,'')"><br>
       密码：<input type="password" name="password" placeholder="请输入密码"><br>
+      验证码：<textarea name="code" id="006" cols="60" rows="10" onkeyup="value=value.replace(/[^\d]/g,'')"></textarea> <br>
       用户类型：<label for="001">新用户</label>
       <input type="checkbox" name="customer_type" value="新用户" id="001">
       <label for="002">老用户</label>
@@ -33,10 +34,19 @@
       <input type="radio" name="sex" value="男" id="004">
       <label for="005">女</label>
       <input type="radio" name="sex" value="女" id="005"> <br>
+      地区：
+      <select name="" id="">
+        <option value=""></option>
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+        <option value="gd">广东</option>
+      </select>
+      <br>
       <!-- <input type="button" value="点击登录"> -->
       <input type="submit" value="登录">
       <input type="reset" value="清空输入的内容">
     </form>
+    <iframe src="https://www.baidu.com" frameborder="0" width="300px" height="300px"></iframe>
     <br>
     <a href="http://www.baidu.com">百度</a> <br>
     <ul>hhh
