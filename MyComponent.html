@@ -21,9 +21,10 @@
       <img src="https://img0.baidu.com/it/u=3688415164,2629030251&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="图片">
       <br>
       <!-- onkeyup事件会在键盘按键被松开时发生 -->
-      账号：<input type="text" name="name" placeholder="请输入账号" onkeyup="value=value.replace(/[^\d]/g,'')"><br>   
+      <input type="text" name="name" placeholder="请输入账号" onkeyup="value=value.replace(/[^\d]/g,'')"><br>   
       密码：<input type="password" name="password" placeholder="请输入密码"><br>
-      用户类型：新用户 <input type="checkbox" name="customer_type" value="新用户">
+      用户类型：<label for="001">新用户</label>
+      <input type="checkbox" name="customer_type" value="新用户" id="001">
       老用户 <input type="checkbox" name="customer_type" value="老用户">
       vip用户 <input type="checkbox" name="customer_type" value="vip用户"> <br>
       性别：男<input type="radio" name="sex" value="男">
